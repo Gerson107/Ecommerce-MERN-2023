@@ -107,3 +107,54 @@ font-family: 'Poppins', sans-serif; */
  height: 70vh;
  flex-direction: column ;
 }
+
+.product-card {
+  /* Estilo por defecto para la tarjeta del producto */
+}
+
+.product-card:hover .btn-primary {
+  /* Estilo para el botón "More Details" cuando se hace hover en la tarjeta */
+  display: block;
+}
+
+.btn-more-primary {
+  /* Oculta el botón "More Details" por defecto */
+  display: none;
+}
+
+
+.product-image-container {
+  position: relative;
+}
+
+.add-to-cart-button {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical según tus preferencias */
+  right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+  background: transparent;
+  border: none;
+  color: #031e39; /* Cambia el color según tus preferencias */
+  font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
+  cursor: pointer;
+  padding: 0;
+}
+
+.circle-background {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Diámetro del círculo */
+  height: 40px; /* Diámetro del círculo */
+  background: white; /* Color de fondo blanco */
+  border-radius: 50%; /* Estilo de círculo */
+  transition: box-shadow 0.3s; /* Agrega una transición suave a la sombra */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.circle-background:hover {
+  background: black; /* Cambia el color de fondo a negro al pasar el cursor */
+  color: rgb(200, 194, 194); /* Cambia el color del texto a blanco al pasar el cursor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Incrementa la sombra al pasar el cursor */
+
+}
+
